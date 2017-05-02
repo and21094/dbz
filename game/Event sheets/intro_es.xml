@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>intro_es</name>
+    <events>
+        <event-block sid="4306656814338451">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="7204734448361896" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="3266209700528095" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="0" name="Play" sid="427632810761019" type="Audio">
+                    <param id="0" name="Audio file">intro_theme</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;intro&quot;</param>
+                </action>
+                <action id="-15" name="Set visible" sid="1039267176678646" type="scene1">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="1115105178308725" type="scene1" />
+                <action id="-16" name="Wait" sid="1973771109669655" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="-15" name="Set visible" sid="7143319730656876" type="text1">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="3596534535608198" type="text1" />
+                <action id="-16" name="Wait" sid="6847787158740807" type="System">
+                    <param id="0" name="Seconds">5</param>
+                </action>
+                <action id="-15" name="Set visible" sid="4020135535673484" type="scene2">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="2044924143928927" type="scene2" />
+                <action id="-16" name="Wait" sid="4166156629164655" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="-15" name="Set visible" sid="6084893534794722" type="text2">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="8685692362169509" type="text2" />
+                <action id="-16" name="Wait" sid="8029473563349759" type="System">
+                    <param id="0" name="Seconds">5</param>
+                </action>
+                <action id="-15" name="Set visible" sid="1616135172342548" type="scene3">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="1037251068190393" type="scene3" />
+                <action id="-16" name="Wait" sid="3803479958369731" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="-15" name="Set visible" sid="9217094171984229" type="text3">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="3466503420433203" type="text3" />
+                <action id="-16" name="Wait" sid="4117656624909206" type="System">
+                    <param id="0" name="Seconds">4</param>
+                </action>
+                <action id="-15" name="Set visible" sid="8142081335943817" type="scene4">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="9128608133516332" type="scene4" />
+                <action id="-16" name="Wait" sid="3366388051666171" type="System">
+                    <param id="0" name="Seconds">5</param>
+                </action>
+                <action id="-15" name="Set visible" sid="1417441408769362" type="scene5">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="305272317991977" type="scene5" />
+                <action id="-16" name="Wait" sid="9769403233667317" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="-15" name="Set visible" sid="613365346199028" type="text4">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="3433584514508872" type="text4" />
+                <action id="-16" name="Wait" sid="5257027671191108" type="System">
+                    <param id="0" name="Seconds">4</param>
+                </action>
+                <action id="-15" name="Set visible" sid="5494037735251821" type="scene6">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="8114304260443469" type="scene6" />
+                <action id="-16" name="Wait" sid="437514306647585" type="System">
+                    <param id="0" name="Seconds">5</param>
+                </action>
+                <action id="-15" name="Set visible" sid="5949342212568701" type="scene7">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="2899320566692184" type="scene7" />
+                <action id="-16" name="Wait" sid="9585053838228419" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="-15" name="Set visible" sid="6536253461465911" type="text5">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="7012041384247155" type="text5" />
+                <action id="-16" name="Wait" sid="5516665334647415" type="System">
+                    <param id="0" name="Seconds">5</param>
+                </action>
+                <action id="-15" name="Set visible" sid="4463794918445997" type="scene8">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="8432421925898063" type="scene8" />
+                <action id="-16" name="Wait" sid="5240918325978023" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="-15" name="Set visible" sid="3043468717122228" type="text6">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="3028317765474858" type="text6" />
+                <action id="-16" name="Wait" sid="3951306998511052" type="System">
+                    <param id="0" name="Seconds">4</param>
+                </action>
+                <action id="-15" name="Set visible" sid="7481334063614255" type="black_bg_end">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="6401059027505369" type="black_bg_end" />
+                <action id="-16" name="Wait" sid="7549562929696484" type="System">
+                    <param id="0" name="Seconds">1.5</param>
+                </action>
+                <action id="32" name="Add mute effect" sid="2291877242065498" type="Audio">
+                    <param id="0" name="Tag">&quot;intro&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="9222378019453467" type="System">
+                    <param id="0" name="Seconds">1.5</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="6270301959405381" type="System">
+                    <param id="0" name="Layout">sky_level</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

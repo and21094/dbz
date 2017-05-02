@@ -1,0 +1,493 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>sky_level_es</name>
+    <events>
+        <variable constant="0" name="dialog_count" sid="6389020055435048" static="0" type="number">0</variable>
+        <variable constant="0" name="next_dialog" sid="9938502221880725" static="0" type="number">0</variable>
+        <variable constant="0" name="move_sky" sid="4431379857158326" static="0" type="number">0</variable>
+        <variable constant="0" name="speed" sid="5926425685582306" static="0" type="number">5</variable>
+        <variable constant="0" name="crashed" sid="3344115243009684" static="0" type="number">0</variable>
+        <event-block sid="2459681361200929">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="3582524619165149" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="5631733152218105" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="9014272830016457" type="dialog_faces">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="6074592881875871" type="dialog_frame">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="8660907371757312" type="System">
+                    <param id="0" name="Variable">dialog_count</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="5326451964002665" type="System">
+                    <param id="0" name="Seconds">0.7</param>
+                </action>
+                <action id="-15" name="Set visible" sid="3162089221137283" type="next_dialog">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="8288048324866399" type="System">
+                    <param id="0" name="Variable">next_dialog</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="914392506777577">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="476314303342968" type="System">
+                    <param id="0" name="Interval (seconds)">0.05</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="2281400273870584" type="System">
+                    <param id="0" name="Variable">dialog_count</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="5413316794095867" type="DestText">
+                    <param id="0" name="Text">left(piccolo_dialog1.Text, len(DestText.Text) + 1)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3105728357798009">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="4600259081821057" type="Keyboard">
+                    <param id="0" name="Key">13 (Return)</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="6043871946951391" type="System">
+                    <param id="0" name="Variable">next_dialog</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="4986774527138998" type="System">
+                    <param id="0" name="Variable">dialog_count</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="1835426675820449" type="System">
+                    <param id="0" name="Variable">dialog_count</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+                <action id="0" name="Set text" sid="5688785890745495" type="DestText">
+                    <param id="0" name="Text">left(empty_dialog.Text, len(DestText.Text) + 1)</param>
+                </action>
+                <action id="4" name="Set animation" sid="7572787536186965" type="dialog_faces">
+                    <param id="0" name="Animation">&quot;Angry_gohan&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="4478533288692093" type="next_dialog">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="757184781393926" type="System">
+                    <param id="0" name="Variable">next_dialog</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="2914061718499668" type="System">
+                    <param id="0" name="Seconds">2.1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="7794336306154278" type="next_dialog">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="7633072876061161" type="System">
+                    <param id="0" name="Variable">next_dialog</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9076407793084055">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="2360761714874479" type="System">
+                    <param id="0" name="Interval (seconds)">0.05</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="3697182483304058" type="System">
+                    <param id="0" name="Variable">dialog_count</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="430008308767853" type="DestText">
+                    <param id="0" name="Text">left(gohan_dialog1.Text, len(DestText.Text) + 1)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8764250139088175">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="3908388227678793" type="Keyboard">
+                    <param id="0" name="Key">13 (Return)</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="3056192490432156" type="System">
+                    <param id="0" name="Variable">next_dialog</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="3448596745335266" type="System">
+                    <param id="0" name="Variable">dialog_count</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="6402510409813656" type="System">
+                    <param id="0" name="Variable">dialog_count</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+                <action id="0" name="Set text" sid="9235312429595683" type="DestText">
+                    <param id="0" name="Text">left(empty_dialog.Text, len(DestText.Text) + 1)</param>
+                </action>
+                <action id="4" name="Set animation" sid="3236509663465324" type="dialog_faces">
+                    <param id="0" name="Animation">&quot;Angry_piccolo&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="7018715401179385" type="next_dialog">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="3635174577659289" type="System">
+                    <param id="0" name="Variable">next_dialog</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="9750328193557064" type="System">
+                    <param id="0" name="Seconds">2.1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="907174925850957" type="next_dialog">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="5052207196784035" type="System">
+                    <param id="0" name="Variable">next_dialog</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7051323774798106">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="317449272740031" type="System">
+                    <param id="0" name="Interval (seconds)">0.05</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="5355899194297948" type="System">
+                    <param id="0" name="Variable">dialog_count</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="3117511621920724" type="DestText">
+                    <param id="0" name="Text">left(piccolo_dialog2.Text, len(DestText.Text) + 1)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8410342380344485">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="3334499355167067" type="Keyboard">
+                    <param id="0" name="Key">13 (Return)</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="6667874632536766" type="System">
+                    <param id="0" name="Variable">next_dialog</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="7676437586782921" type="System">
+                    <param id="0" name="Variable">dialog_count</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="8459325632121709" type="DestText">
+                    <param id="0" name="Text">left(empty_dialog.Text, len(DestText.Text) + 1)</param>
+                </action>
+                <action id="-15" name="Set visible" sid="3007679156997053" type="dialog_frame">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="2118828232156136" type="dialog_faces">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="2123574455617068" type="next_dialog">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="7406498316426878" type="System">
+                    <param id="0" name="Variable">next_dialog</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="8183092050711373" type="System">
+                    <param id="0" name="Variable">dialog_count</param>
+                    <param id="1" name="Value">4</param>
+                </action>
+                <action id="-16" name="Wait" sid="5063208095504297" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="-9" name="Set value" sid="2430615660883608" type="System">
+                    <param id="0" name="Variable">next_dialog</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="3601163596101071" type="level_objectives">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5231971580359681">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="6167486624583552" type="Keyboard">
+                    <param id="0" name="Key">13 (Return)</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="1272341325185521" type="System">
+                    <param id="0" name="Variable">next_dialog</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="6014521093591002" type="System">
+                    <param id="0" name="Variable">dialog_count</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="760145464362595" type="System">
+                    <param id="0" name="Variable">next_dialog</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="430563743352566" type="System">
+                    <param id="0" name="Variable">dialog_count</param>
+                    <param id="1" name="Value">5</param>
+                </action>
+                <action id="-15" name="Set visible" sid="8562928602917324" type="level_objectives">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action behavior="Sine" id="0" name="Set active" sid="8324456631524152" type="player_gohan">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="6210643203449946" type="player_gohan">
+                    <param id="0" name="Animation">&quot;Charge_fly&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="375670989123957" type="System">
+                    <param id="0" name="Seconds">0.3</param>
+                </action>
+                <action behavior="Sine" id="0" name="Set active" sid="995496729041342" type="npc_piccolo">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="1274966748163266" type="npc_piccolo">
+                    <param id="0" name="Animation">&quot;Charge_fly&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="5415152369587674" type="System">
+                    <param id="0" name="Seconds">0.3</param>
+                </action>
+                <action id="4" name="Set animation" sid="9445222243002213" type="player_gohan">
+                    <param id="0" name="Animation">&quot;move&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="3627635677354128" type="npc_piccolo">
+                    <param id="0" name="Animation">&quot;move&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="4486427507349224" type="System">
+                    <param id="0" name="Variable">move_sky</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1694492210400534">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="4667597279556402" type="System" />
+                <condition id="-14" name="Compare variable" sid="3848937871453174" type="System">
+                    <param id="0" name="Variable">move_sky</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="7107841060323095" type="sky_bg">
+                    <param id="0" name="X">sky_bg.X-speed</param>
+                </action>
+                <action id="-15" name="Set visible" sid="1521210397073484" type="timer">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="2762408106814746" type="timer_bg">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-1" name="Set X" sid="8348915650910728" type="mountain">
+                    <param id="0" name="X">mountain.X-speed</param>
+                </action>
+                <action id="-1" name="Set X" sid="1079301276889807" type="semilla">
+                    <param id="0" name="X">semilla.X-speed</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1973530150469539">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="7941117283888897" type="System">
+                    <param id="0" name="Interval (seconds)">1</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="1209628158094261" type="System">
+                    <param id="0" name="Variable">move_sky</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="1803085094003636" type="timer">
+                    <param id="0" name="Text">timer.count_timer</param>
+                </action>
+                <action id="0" name="Set text" sid="2796006639022689" type="timer_bg">
+                    <param id="0" name="Text">timer.count_timer</param>
+                </action>
+                <action id="-11" name="Add to" sid="7004727404983849" type="timer">
+                    <param id="0" name="Instance variable">count_timer</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7235031287860487">
+            <conditions>
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="3978066508448117" type="player_gohan">
+                    <param id="0" name="Object">level_up_barrier</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="5910928718089579" type="System">
+                    <param id="0" name="Variable">move_sky</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="2" name="Key is down" sid="3822299200098884" type="Keyboard">
+                    <param id="0" name="Key">38 (Up arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="3963984767360025" type="player_gohan">
+                    <param id="0" name="Y">player_gohan.Y-5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5026348754607573">
+            <conditions>
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="2253247422032054" type="player_gohan">
+                    <param id="0" name="Object">level_down_barrier</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="1089111826548823" type="System">
+                    <param id="0" name="Variable">move_sky</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="2" name="Key is down" sid="6790755177272342" type="Keyboard">
+                    <param id="0" name="Key">40 (Down arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="3867333381955456" type="player_gohan">
+                    <param id="0" name="Y">player_gohan.Y+5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3887479144562543">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="8242763592324933" type="player_gohan">
+                    <param id="0" name="Object">mountain</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="1781205901046201" type="System">
+                    <param id="0" name="Variable">speed</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+                <action id="-9" name="Set value" sid="4379980450682025" type="System">
+                    <param id="0" name="Variable">crashed</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="3276011245737219" type="crash_dust">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="407676537611761" type="System">
+                    <param id="0" name="Seconds">0.05</param>
+                </action>
+                <action id="4" name="Set animation" sid="899716264710742" type="crash_dust">
+                    <param id="0" name="Animation">&quot;Across&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="1802287778571349" type="player_gohan">
+                    <param id="0" name="Animation">&quot;crash&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="849326269853515">
+            <conditions>
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="5794073110796995" type="player_gohan">
+                    <param id="0" name="Object">mountain</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="2816545909482955" type="System">
+                    <param id="0" name="Variable">crashed</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="1493459309763155" type="crash_dust">
+                    <param id="0" name="Animation">&quot;end&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="5592222394886301" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="-15" name="Set visible" sid="800969121853204" type="crash_dust">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="7406295296987763" type="System">
+                    <param id="0" name="Variable">speed</param>
+                    <param id="1" name="Value">5</param>
+                </action>
+                <action id="4" name="Set animation" sid="8706637751109773" type="player_gohan">
+                    <param id="0" name="Animation">&quot;move&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="3253419682340872" type="System">
+                    <param id="0" name="Variable">crashed</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="277636389039139">
+            <conditions>
+                <condition id="-18" name="On created" sid="8926175963678572" type="player_gohan" />
+            </conditions>
+            <actions>
+                <action behavior="Pin" id="0" name="Pin to object" sid="9579936655484552" type="crash_dust">
+                    <param id="0" name="Pin to">player_gohan</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="285773079671" type="System">
+                    <param id="0" name="Seconds">0.7</param>
+                </action>
+                <action behavior="Sine" id="0" name="Set active" sid="5162428560043226" type="player_gohan">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4038088112499921">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="5595345189556949" type="player_gohan">
+                    <param id="0" name="Object">semilla</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="7168802694247777" type="System">
+                    <param id="0" name="Variable">speed</param>
+                    <param id="1" name="Value">10</param>
+                </action>
+                <action id="-16" name="Wait" sid="7336245839084497" type="System">
+                    <param id="0" name="Seconds">2</param>
+                </action>
+                <action id="-9" name="Set value" sid="6484759868874557" type="System">
+                    <param id="0" name="Variable">speed</param>
+                    <param id="1" name="Value">5</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

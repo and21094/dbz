@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>main_menu_es</name>
+    <events>
+        <event-block sid="7265348358652807">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="1220897663262507" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="7970207501597983" type="Audio">
+                    <param id="0" name="Audio file">main_theme</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;main&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="8511990951508632" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="5996469396530078" type="main_bg">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="8531744984941022" type="main_bg" />
+                <action id="-16" name="Wait" sid="7717381920609274" type="System">
+                    <param id="0" name="Seconds">3.5</param>
+                </action>
+                <action id="-15" name="Set visible" sid="1756860536542416" type="main_title">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="9636380044952017" type="main_title" />
+                <action id="-16" name="Wait" sid="1060860581027921" type="System">
+                    <param id="0" name="Seconds">1.5</param>
+                </action>
+                <action id="-15" name="Set visible" sid="2733405337340334" type="press_enter">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2820140552000009">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="4106923451931087" type="Keyboard">
+                    <param id="0" name="Key">13 (Return)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="1874523099289738" type="black_bg_end">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="3987129861632849" type="black_bg_end" />
+                <action id="-16" name="Wait" sid="122427469933707" type="System">
+                    <param id="0" name="Seconds">1.5</param>
+                </action>
+                <action id="32" name="Add mute effect" sid="474001232549265" type="Audio">
+                    <param id="0" name="Tag">&quot;main&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="7062232670274798" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="5099332204459329" type="System">
+                    <param id="0" name="Layout">intro</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

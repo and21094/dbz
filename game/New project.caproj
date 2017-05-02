@@ -1,0 +1,808 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>3pzxv0pxj1iyi</unique-id>
+    <saved-with-version>17800</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>854</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D web</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder expanded="1">
+        <object-type name="main_bg" sid="209767083059724">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="1758922869469258">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9261708252516025" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501562" original-source="C:\Users\ANDRES\Desktop\resurection f\main_bg.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="main_title" sid="4230679273815563">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="3199709846311293">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1734438467983128" speed="5">
+                    <frame duration="1" hotspotX="0.500244" hotspotY="0.5" original-source="C:\Users\ANDRES\Desktop\resurection f\main_title.png">
+                        <collision-poly>
+                            <point x="0.0156326" y="0.0426667" />
+                            <point x="0.499756" y="0.0893333" />
+                            <point x="0.985833" y="0.0386667" />
+                            <point x="0.937958" y="0.5" />
+                            <point x="0.924279" y="0.793333" />
+                            <point x="0.0781632" y="0.786667" />
+                            <point x="0.0410357" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="black_bg" sid="2972656017883911">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1822088932680755" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Audio" sid="3351558062134762">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="press_enter" sid="2948230851374144">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="7697367221995611">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4041687205027897" speed="5">
+                    <frame duration="1" hotspotX="0.501119" hotspotY="0.5" original-source="C:\Users\ANDRES\Desktop\resurection f\press_enter.png">
+                        <collision-poly>
+                            <point x="0.0333333" y="0.202703" />
+                            <point x="0.5" y="0.189189" />
+                            <point x="0.962222" y="0.22973" />
+                            <point x="0.973333" y="0.837838" />
+                            <point x="0.5" y="0.905405" />
+                            <point x="0.04" y="0.756757" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="4764437380251057">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="scene1" sid="170541527678572">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="7098356488103543">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2901231710432942" speed="5">
+                    <frame duration="1" hotspotX="0.500441" hotspotY="0.500785" original-source="C:\Users\ANDRES\Desktop\resurection f\assets\scene2.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="text1" sid="3001046988777878">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="5948968776322866">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4092416279255302" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.508197" original-source="C:\Users\ANDRES\Desktop\resurection f\assets\text1.png">
+                        <collision-poly>
+                            <point x="0.0107143" y="0.196721" />
+                            <point x="0.5" y="0.311475" />
+                            <point x="0.982143" y="0.327869" />
+                            <point x="0.982143" y="0.672131" />
+                            <point x="0.5" y="0.721311" />
+                            <point x="0.0142857" y="0.737705" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="scene2" sid="3542226948764759">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="8615348897871242">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4379099019866366" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ANDRES\Desktop\resurection f\assets\scene2.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="text2" sid="4288505290117771">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="7772891857255866">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1667764209486322" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ANDRES\Desktop\resurection f\assets\text2.png">
+                        <collision-poly>
+                            <point x="0.0107143" y="0.107143" />
+                            <point x="0.5" y="0.1875" />
+                            <point x="0.980357" y="0.196429" />
+                            <point x="0.938393" y="0.383929" />
+                            <point x="0.5" y="0.839286" />
+                            <point x="0.0598214" y="0.401786" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="scene3" sid="3702204144339975">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="5852566976717721">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="887528034798567" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ANDRES\Desktop\resurection f\assets\scene3.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="text3" sid="7336729143944874">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="5139659665224402">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="356059891624315" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504587" original-source="C:\Users\ANDRES\Desktop\resurection f\assets\text3.png">
+                        <collision-poly>
+                            <point x="0.00982143" y="0.100917" />
+                            <point x="0.5" y="0.183486" />
+                            <point x="0.983929" y="0.165138" />
+                            <point x="0.942857" y="0.495413" />
+                            <point x="0.980357" y="0.798165" />
+                            <point x="0.5" y="0.844037" />
+                            <point x="0.0223214" y="0.770642" />
+                            <point x="0.940179" y="0.495413" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="scene4" sid="2909318686616046">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="8220300514640783">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="256553380476614" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ANDRES\Desktop\resurection f\assets\scene4.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="scene5" sid="8631367301366662">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="9660635654387806">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="602334023546973" speed="5">
+                    <frame duration="1" hotspotX="0.500368" hotspotY="0.5" original-source="C:\Users\ANDRES\Desktop\resurection f\assets\scene5.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="text4" sid="4324054443128536">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="4561932766133917">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1365567208476689" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ANDRES\Desktop\resurection f\assets\text4.png">
+                        <collision-poly>
+                            <point x="0.00906096" y="0.0696203" />
+                            <point x="0.985997" y="0.107595" />
+                            <point x="0.925041" y="0.5" />
+                            <point x="0.926689" y="0.436709" />
+                            <point x="0.5" y="0.886076" />
+                            <point x="0.0658979" y="0.493671" />
+                            <point x="0.0667216" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="scene6" sid="9942418155715215">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="2358171588724599">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4141257880872623" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ANDRES\Desktop\resurection f\assets\scene6.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="scene7" sid="8742431506347637">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="7680313036922484">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3111345483828525" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ANDRES\Desktop\resurection f\assets\scene7.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="text5" sid="9672948688018914">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="6436609750097021">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7308000500561832" speed="5">
+                    <frame duration="1" hotspotX="0.500398" hotspotY="0.5" original-source="C:\Users\ANDRES\Desktop\resurection f\assets\text5.png">
+                        <collision-poly>
+                            <point x="0.0121655" y="0.15" />
+                            <point x="0.499594" y="0.18" />
+                            <point x="0.985401" y="0.18" />
+                            <point x="0.905921" y="0.5" />
+                            <point x="0.95296" y="0.42" />
+                            <point x="0.499594" y="0.91" />
+                            <point x="0.054339" y="0.33" />
+                            <point x="0.109489" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="scene8" sid="9868053646347888">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="5892578499998929">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7567731171515113" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ANDRES\Desktop\resurection f\assets\scene8.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="text6" sid="5299864205838321">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="9488780504444041">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3242199864683522" speed="5">
+                    <frame duration="1" hotspotX="0.501099" hotspotY="0.509804" original-source="C:\Users\ANDRES\Desktop\resurection f\assets\text6.png">
+                        <collision-poly>
+                            <point x="0.021978" y="0.196078" />
+                            <point x="0.498901" y="0.333333" />
+                            <point x="0.953846" y="0.411765" />
+                            <point x="0.953846" y="0.490196" />
+                            <point x="0.978022" y="0.803922" />
+                            <point x="0.498901" y="0.843137" />
+                            <point x="0.021978" y="0.803922" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="black_bg_end" sid="4013864805602443">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="1676767816618618">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6016917122224212" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="sky_bg" sid="145882099546865">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\ANDRES\Desktop\resurection f\assets\sky2.png" />
+        </object-type>
+        <object-type name="npc_piccolo" sid="4200295733966368">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="6778020185670547">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5176655858948317" speed="6">
+                    <frame duration="1" hotspotX="0.506667" hotspotY="0.506667" original-source="C:\Users\ANDRES\Desktop\resurection f\assets\characters\piccolo\fly3.png">
+                        <collision-poly>
+                            <point x="0.44" y="0.44" />
+                            <point x="0.493333" y="0.373333" />
+                            <point x="0.6" y="0.4" />
+                            <point x="0.64" y="0.493333" />
+                            <point x="0.72" y="0.72" />
+                            <point x="0.493333" y="0.946667" />
+                            <point x="0.36" y="0.64" />
+                            <point x="0.413333" y="0.493333" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Charge_fly" pingpong="0" repeatcount="1" repeatto="0" sid="1387489262703309" speed="5">
+                    <frame duration="1" hotspotX="0.506667" hotspotY="0.506667" original-source="C:\Users\ANDRES\Desktop\resurection f\assets\characters\piccolo\crounch.png">
+                        <collision-poly>
+                            <point x="0.533333" y="0.533333" />
+                            <point x="0.493333" y="0.533333" />
+                            <point x="0.706667" y="0.493333" />
+                            <point x="0.773333" y="0.773333" />
+                            <point x="0.493333" y="0.946667" />
+                            <point x="0.546667" y="0.493333" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="1" name="move" pingpong="0" repeatcount="1" repeatto="0" sid="3166347117362779" speed="5">
+                    <frame duration="1" hotspotX="0.506667" hotspotY="0.506667" original-source="C:\Users\ANDRES\Desktop\resurection f\assets\characters\piccolo\move_fly3.png">
+                        <collision-poly>
+                            <point x="0.666667" y="0.666667" />
+                            <point x="0.493333" y="0.733333" />
+                            <point x="0.88" y="0.88" />
+                            <point x="0.493333" y="0.92" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.506667" hotspotY="0.506667" original-source="C:\Users\ANDRES\Desktop\resurection f\assets\characters\piccolo\move_fly2.png">
+                        <collision-poly>
+                            <point x="0.666667" y="0.666667" />
+                            <point x="0.493333" y="0.693333" />
+                            <point x="0.88" y="0.88" />
+                            <point x="0.493333" y="0.92" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="dialog_faces" sid="6594650664646907">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Angry_piccolo" pingpong="0" repeatcount="1" repeatto="0" sid="2938757983400866" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ANDRES\Desktop\resurection f\assets\characters\piccolo\angry_face.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="Angry_gohan" pingpong="0" repeatcount="1" repeatto="0" sid="289156567385065" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ANDRES\Desktop\resurection f\assets\characters\gohan\angry_face.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="dialog_frame" sid="6014364545815534">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1591510438955455" speed="5">
+                    <frame duration="1" hotspotX="0.502128" hotspotY="0.509091" original-source="C:\Users\ANDRES\Desktop\resurection f\assets\dialog_frame.png">
+                        <collision-poly>
+                            <point x="0.0212766" y="0.0909091" />
+                            <point x="0.497872" y="0" />
+                            <point x="0.978723" y="0.0909091" />
+                            <point x="1" y="0.490909" />
+                            <point x="0.978723" y="0.909091" />
+                            <point x="0.497872" y="1" />
+                            <point x="0.0212766" y="0.909091" />
+                            <point x="0" y="0.490909" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="piccolo_dialog1" sid="3689618476507326">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Fade" sid="7602225003713502">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="DestText" sid="5852841093500052">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="next_dialog" sid="4525441672198126">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7731688351437708" speed="3">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.538462" original-source="C:\Users\ANDRES\Desktop\resurection f\assets\next_dialog1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.538462" original-source="C:\Users\ANDRES\Desktop\resurection f\assets\next_dialog2.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="gohan_dialog1" sid="3597683741053095">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="empty_dialog" sid="5356514226793897">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="piccolo_dialog2" sid="9769187746698521">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="level_objectives" sid="4433501675054859">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9583161965447682" speed="5">
+                    <frame duration="1" hotspotX="0.50039" hotspotY="0.503356" original-source="C:\Users\ANDRES\Desktop\resurection f\assets\level1_objectives.png">
+                        <collision-poly>
+                            <point x="0.0101483" y="0.0872483" />
+                            <point x="0.984387" y="0.134228" />
+                            <point x="0.91491" y="0.496644" />
+                            <point x="0.91491" y="0.268456" />
+                            <point x="0.49961" y="0.946309" />
+                            <point x="0.0507416" y="0.563758" />
+                            <point x="0.0530835" y="0.496644" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="player_gohan" sid="9149771311020701">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="8977168603579931">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="562447549606211">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2489877002204821" speed="6">
+                    <frame duration="1" hotspotX="0.506667" hotspotY="0.506667" original-source="C:\Users\ANDRES\Desktop\resurection f\assets\characters\gohan\fly3.png">
+                        <collision-poly>
+                            <point x="0.44" y="0.44" />
+                            <point x="0.493333" y="0.4" />
+                            <point x="0.586667" y="0.413333" />
+                            <point x="0.666667" y="0.493333" />
+                            <point x="0.706667" y="0.706667" />
+                            <point x="0.493333" y="0.826667" />
+                            <point x="0.426667" y="0.573333" />
+                            <point x="0.4" y="0.493333" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Charge_fly" pingpong="0" repeatcount="1" repeatto="0" sid="5876764673212403" speed="5">
+                    <frame duration="1" hotspotX="0.506667" hotspotY="0.506667" original-source="C:\Users\ANDRES\Desktop\resurection f\assets\characters\gohan\crounch.png">
+                        <collision-poly>
+                            <point x="0.506667" y="0.506667" />
+                            <point x="0.493333" y="0.506667" />
+                            <point x="0.52" y="0.493333" />
+                            <point x="0.666667" y="0.666667" />
+                            <point x="0.493333" y="0.973333" />
+                            <point x="0.506667" y="0.493333" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="1" name="move" pingpong="0" repeatcount="1" repeatto="0" sid="5477095329033085" speed="5">
+                    <frame duration="1" hotspotX="0.506667" hotspotY="0.506667" original-source="C:\Users\ANDRES\Desktop\resurection f\assets\characters\gohan\move_fly.png">
+                        <collision-poly>
+                            <point x="0.733333" y="0.733333" />
+                            <point x="0.493333" y="0.76" />
+                            <point x="0.853333" y="0.853333" />
+                            <point x="0.493333" y="0.866667" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.506667" hotspotY="0.506667" original-source="C:\Users\ANDRES\Desktop\resurection f\assets\characters\gohan\move_fly1.png">
+                        <collision-poly>
+                            <point x="0.733333" y="0.733333" />
+                            <point x="0.493333" y="0.76" />
+                            <point x="0.853333" y="0.853333" />
+                            <point x="0.493333" y="0.866667" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="1" name="crash" pingpong="0" repeatcount="1" repeatto="0" sid="9665737036557417" speed="5">
+                    <frame duration="1" hotspotX="0.506667" hotspotY="0.506667" original-source="C:\Users\ANDRES\Desktop\resurection f\assets\characters\gohan\move_fly_crash.png">
+                        <collision-poly>
+                            <point x="0.746667" y="0.746667" />
+                            <point x="0.493333" y="0.8" />
+                            <point x="0.88" y="0.88" />
+                            <point x="0.493333" y="0.893333" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.506667" hotspotY="0.506667" original-source="C:\Users\ANDRES\Desktop\resurection f\assets\characters\gohan\move_fly_crash1.png">
+                        <collision-poly>
+                            <point x="0.706667" y="0.706667" />
+                            <point x="0.493333" y="0.8" />
+                            <point x="0.88" y="0.88" />
+                            <point x="0.493333" y="0.893333" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="timer" sid="5056538689009546">
+            <plugin id="Text" />
+            <instance-variables>
+                <instance-variable name="count_timer" sid="8896894197663107" type="number" />
+            </instance-variables>
+        </object-type>
+        <object-type name="timer_bg" sid="6637770226350843">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="level_down_barrier" sid="4522870840486579">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="9327652293580216">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9306582080672348" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="level_up_barrier" sid="167026655186422">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3450098555236698" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="mountain" sid="6318821607526567">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3246579994283963" speed="5">
+                    <frame duration="1" hotspotX="0.502336" hotspotY="0.501629" original-source="C:\Users\ANDRES\Desktop\resurection f\assets\mountain2.png">
+                        <collision-poly>
+                            <point x="0.356096" y="0.127643" />
+                            <point x="0.640187" y="0.159801" />
+                            <point x="0.691589" y="0.508846" />
+                            <point x="0.893586" y="0.610749" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0514019" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="crash_dust" sid="9039987056963936">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="2291958847796746">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4113026191826737" speed="1">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504505" original-source="C:\Users\ANDRES\Desktop\resurection f\assets\characters\dust\fly1.png">
+                        <collision-poly>
+                            <point x="0.31" y="0.31" />
+                            <point x="0.5" y="0.17" />
+                            <point x="0.84" y="0.11" />
+                            <point x="0.93" y="0.5" />
+                            <point x="0.82" y="0.92" />
+                            <point x="0.5" y="0.82" />
+                            <point x="0.3" y="0.7" />
+                            <point x="0.29" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="1" name="Across" pingpong="0" repeatcount="1" repeatto="0" sid="8689706254391783" speed="7">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504505" original-source="C:\Users\ANDRES\Desktop\resurection f\assets\characters\dust\fly2.png">
+                        <collision-poly>
+                            <point x="0.130435" y="0.216216" />
+                            <point x="0.5" y="0.117117" />
+                            <point x="0.820652" y="0.297297" />
+                            <point x="0.929348" y="0.495495" />
+                            <point x="0.831522" y="0.720721" />
+                            <point x="0.5" y="0.756757" />
+                            <point x="0.179348" y="0.702703" />
+                            <point x="0.0597826" y="0.495495" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504505" original-source="C:\Users\ANDRES\Desktop\resurection f\assets\characters\dust\fly3.png">
+                        <collision-poly>
+                            <point x="0.146739" y="0.243243" />
+                            <point x="0.5" y="0.144144" />
+                            <point x="0.820652" y="0.297297" />
+                            <point x="0.913043" y="0.495495" />
+                            <point x="0.831522" y="0.720721" />
+                            <point x="0.5" y="0.846847" />
+                            <point x="0.179348" y="0.702703" />
+                            <point x="0.0869565" y="0.495495" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504505" original-source="C:\Users\ANDRES\Desktop\resurection f\assets\characters\dust\fly4.png">
+                        <collision-poly>
+                            <point x="0.11413" y="0.189189" />
+                            <point x="0.5" y="0.0990991" />
+                            <point x="0.826087" y="0.288288" />
+                            <point x="0.88587" y="0.495495" />
+                            <point x="0.869565" y="0.783784" />
+                            <point x="0.5" y="0.846847" />
+                            <point x="0.173913" y="0.711712" />
+                            <point x="0.0597826" y="0.495495" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="4" loop="0" name="end" pingpong="0" repeatcount="1" repeatto="0" sid="1218339149564555" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504505" original-source="C:\Users\ANDRES\Desktop\resurection f\assets\characters\dust\end.png">
+                        <collision-poly>
+                            <point x="0.23913" y="0.396396" />
+                            <point x="0.5" y="0.234234" />
+                            <point x="0.815217" y="0.306306" />
+                            <point x="0.777174" y="0.495495" />
+                            <point x="0.853261" y="0.756757" />
+                            <point x="0.5" y="0.765766" />
+                            <point x="0.11413" y="0.810811" />
+                            <point x="0.217391" y="0.495495" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504505" original-source="C:\Users\ANDRES\Desktop\resurection f\assets\characters\dust\end1.png">
+                        <collision-poly>
+                            <point x="0.266304" y="0.441441" />
+                            <point x="0.5" y="0.234234" />
+                            <point x="0.744565" y="0.423423" />
+                            <point x="0.722826" y="0.495495" />
+                            <point x="0.76087" y="0.603604" />
+                            <point x="0.5" y="0.801802" />
+                            <point x="0.141304" y="0.765766" />
+                            <point x="0.255435" y="0.495495" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504505" original-source="C:\Users\ANDRES\Desktop\resurection f\assets\characters\dust\end2.png">
+                        <collision-poly>
+                            <point x="0.298913" y="0.495495" />
+                            <point x="0.5" y="0.315315" />
+                            <point x="0.76087" y="0.396396" />
+                            <point x="0.717391" y="0.495495" />
+                            <point x="0.728261" y="0.54955" />
+                            <point x="0.5" y="0.693694" />
+                            <point x="0.168478" y="0.720721" />
+                            <point x="0.298913" y="0.495495" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504505" original-source="C:\Users\ANDRES\Desktop\resurection f\assets\characters\dust\end3.png">
+                        <collision-poly>
+                            <point x="0.342391" y="0.567568" />
+                            <point x="0.5" y="0.666667" />
+                            <point x="0.690217" y="0.513514" />
+                            <point x="0.440217" y="0.495495" />
+                            <point x="0.5" y="0.675676" />
+                            <point x="0.179348" y="0.702703" />
+                            <point x="0.429348" y="0.495495" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="semilla" sid="3817748320435521">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="6222465233018614">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2881629207932019" speed="5">
+                    <frame duration="1" hotspotX="0.517241" hotspotY="0.5" original-source="C:\Users\ANDRES\Desktop\resurection f\assets\semilla.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder expanded="1">
+        <layout>main_menu.xml</layout>
+        <layout>intro.xml</layout>
+        <layout>sky_level.xml</layout>
+    </layout-folder>
+    <event-folder expanded="1">
+        <event-sheet>main_menu_es.xml</event-sheet>
+        <event-sheet>intro_es.xml</event-sheet>
+        <event-sheet>sky_level_es.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Audio" uid="3">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+                <speed-of-sound>5000</speed-of-sound>
+                <doppler-factor>1</doppler-factor>
+            </properties>
+        </global-instance>
+        <global-instance type="Keyboard" uid="5" />
+    </global-instances>
+    <sounds-folder expanded="1" />
+    <music-folder expanded="1">
+        <file name="main_theme.m4a" />
+        <file name="main_theme.ogg" />
+        <file name="intro_theme.m4a" />
+        <file name="intro_theme.ogg" />
+    </music-folder>
+    <files-folder expanded="1">
+        <file-folder expanded="0" name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
