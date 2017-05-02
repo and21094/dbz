@@ -758,6 +758,65 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="fly_ki" sid="5023940180158827">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="7334531312887004">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5547491861238651" speed="10">
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.5" original-source="C:\Users\ANDRES\Desktop\resurection f game\dbz\assets\characters\fly_ki\1.png">
+                        <collision-poly>
+                            <point x="0.314286" y="0.663265" />
+                            <point x="0.0380952" y="0.5" />
+                            <point x="0.314286" y="0.336735" />
+                            <point x="0.495238" y="0.173469" />
+                            <point x="0.838095" y="0.173469" />
+                            <point x="1" y="0.5" />
+                            <point x="0.838095" y="0.826531" />
+                            <point x="0.495238" y="0.806122" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.5" original-source="C:\Users\ANDRES\Desktop\resurection f game\dbz\assets\characters\fly_ki\2.png">
+                        <collision-poly>
+                            <point x="0.285714" y="0.5" />
+                            <point x="0.361905" y="0.387755" />
+                            <point x="0.495238" y="0.306122" />
+                            <point x="0.87619" y="0.132653" />
+                            <point x="1" y="0.5" />
+                            <point x="0.895238" y="0.887755" />
+                            <point x="0.495238" y="0.744898" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.5" original-source="C:\Users\ANDRES\Desktop\resurection f game\dbz\assets\characters\fly_ki\3.png">
+                        <collision-poly>
+                            <point x="0.32381" y="0.653061" />
+                            <point x="0.2" y="0.5" />
+                            <point x="0.352381" y="0.377551" />
+                            <point x="0.495238" y="0.234694" />
+                            <point x="0.809524" y="0.204082" />
+                            <point x="0.92381" y="0.5" />
+                            <point x="0.819048" y="0.806122" />
+                            <point x="0.495238" y="0.77551" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.5" original-source="C:\Users\ANDRES\Desktop\resurection f game\dbz\assets\characters\fly_ki\4.png">
+                        <collision-poly>
+                            <point x="0.314286" y="0.663265" />
+                            <point x="0.257143" y="0.5" />
+                            <point x="0.333333" y="0.357143" />
+                            <point x="0.495238" y="0.265306" />
+                            <point x="0.847619" y="0.163265" />
+                            <point x="1" y="0.5" />
+                            <point x="0.838095" y="0.826531" />
+                            <point x="0.495238" y="0.765306" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder expanded="1">

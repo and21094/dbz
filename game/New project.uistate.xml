@@ -12,10 +12,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <open-tabs>
         <layout>main_menu</layout>
         <layout>intro</layout>
-        <layout active="1">sky_level</layout>
+        <layout>sky_level</layout>
         <event-sheet>main_menu_es</event-sheet>
         <event-sheet>intro_es</event-sheet>
-        <event-sheet>sky_level_es</event-sheet>
+        <event-sheet active="1">sky_level_es</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
